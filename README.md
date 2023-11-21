@@ -1,2 +1,3 @@
-# base-repo
-Base repository with setup for VS Code, structure, testing, formatting, pre-commits   
+# KKS
+Project to interpret the KKS numbering system.
+http://kkscode.blogspot.com/

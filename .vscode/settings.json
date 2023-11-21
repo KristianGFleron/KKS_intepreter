@@ -21,4 +21,8 @@
     "autoDocstring.docstringFormat": "numpy",
     "autoDocstring.includeName": true,
     "cSpell.words": [],
+    "jupyter.runStartupCommands": [
+        "%load_ext autoreload",
+        "%autoreload 2"
+    ]
 }

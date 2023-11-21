@@ -1,0 +1,30 @@
+
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    # Ruff version.
+    rev: v0.0.291
+    hooks:
+      - id: ruff
+        args: [ --fix, --exit-non-zero-on-fix ]
+        types_or: [python, pyi, jupyter]
+  - repo: https://github.com/ambv/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        language_version: python3
+  - repo: https://github.com/PyCQA/pydocstyle
+    rev: 6.3.0
+    hooks:
+      - id: pydocstyle
+        name: pydocstyle
+        description: pydocstyle is a static analysis tool for checking compliance with Python docstring conventions.
+        entry: pydocstyle
+        language: python
+        types: [ python ]
+  -   repo: https://github.com/PyCQA/isort
+      rev: 5.12.0
+      hooks:
+      - id: isort
+        additional_dependencies: ["toml"]

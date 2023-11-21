@@ -1,0 +1,9 @@
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
+
+[tool.ruff]
+ignore = ["E203"]
+show-fixes = true
+line-length = 120

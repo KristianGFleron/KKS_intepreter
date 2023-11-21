@@ -1,0 +1,5 @@
+#Packages to for base repo 
+black==23.9.1
+pre-commit
+pytest==7.4.2
+tomli==2.0.1
